@@ -13,8 +13,9 @@
 # ----------------------------------------
 
 anchura = 40
+print("Bienvenido al sistema de ventas\n")
 producto = (str(input(f"introduce el producto:" )))
-cantidad = (input(f"Introduce Cantidad:"))
+cantidad = (int(input(f"Introduce Cantidad:")))
 precio_unitario = (float(input(f"Precio por unidad: ")))
 descuento = (float(input(f"Descuento: ")))
 separador = "-" * anchura
@@ -23,8 +24,21 @@ separador = "-" * anchura
 print(separador)
 print (f"{'RECIBO DE VENTA':^{anchura}}")
 print(separador)
-print (f'Producto: {producto.upper():^{anchura}}')
-print(f"{'Producto: ' + producto.upper():^{anchura}}")
+print (f'Producto : {producto.upper()}')
+print (f'Cantidad : {cantidad}')
+print (f'Precio U.: {precio_unitario:.2f} €')
+print(separador)
+subtotal = precio_unitario * int(cantidad)
+print (f'Subtotal : {subtotal:.2f} €')
+descuento_euros = subtotal * (descuento / 100)
+print (f'Descuento: {descuento}% (-{descuento_euros:.2f} €)')
+total = subtotal - descuento_euros
+print (f'TOTAL    : {total:.2f} €')
+print(separador)
+print(f"{'¡Gracias por su compra!':^{anchura}}")
+print(separador)
+
+
 
 # ejemplo
 
