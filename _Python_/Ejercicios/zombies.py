@@ -9,3 +9,18 @@
 # Cuántas raciones se consumen en un día en total.
 # Para cuántos días exactos alcanza la comida.
 # Si cada día se desperdicia un 10% de la comida por culpa de las ratas, ¿cuántas raciones se pierden al día?
+# Define las variables
+personas = 10
+raciones_por_persona = 3
+total_raciones = 200
+# Calcula el consumo diario total
+consumo_diario_total = personas * raciones_por_persona
+# Calcula cuántos días exactos alcanza la comida
+dias_exactos = total_raciones // consumo_diario_total
+# Calcula las raciones perdidas al día por las ratas
+raciones_perdidas_diarias = total_raciones * 0.10
+raciones= (total_raciones * 10)/100
+# Muestra los resultados
+print(f"Consumo diario total: {consumo_diario_total} raciones")
+print(f"Días exactos que alcanza la comida: {dias_exactos} días")
+print(f"Raciones perdidas al día por las ratas: {raciones_perdidas_diarias} raciones")
