@@ -240,23 +240,32 @@
 
 # Output
 # El impuesto es: 19470.0 pesos
-pago = float(0.0)
-limite = 85528
 
-while True:
+# pago = float(0.0)
+# limite = 85528
+# porcentaje_superior = 32
+# porcentaje_inferior = 18
+# impuesto_base = 14839.2
+# impuesto_minimo = 556.2
 
-        ingreso = float(input("Introduce el Sueldo: "))
-        if (ingreso > limite):
-            primer_ingreso= ingreso - limite
-            valor_impuesto = (14839.2 + (primer_ingreso * 0.32))
-            pago = round(valor_impuesto, 0)
-        else:
-            pago = round((((ingreso * 18) / 100) - 556.2), 0)
-            if (pago <= 0.0):
-                 pago = 0.0 
+# while True:
+#         ingreso = input("Introduce el Sueldo: ")
+#         try:
+#             ingreso_float = float (ingreso)
+        
+#             if (ingreso_float > limite):
+#                 primer_ingreso= ingreso_float - limite
+#                 valor_impuesto = (impuesto_base + ((primer_ingreso * porcentaje_superior) / 100))
+#                 pago = round(valor_impuesto, 0)
+#             else:
+#                 pago = round((((ingreso_float * porcentaje_inferior) / 100) - impuesto_minimo), 0)
+#                 if (pago <= 0.0):
+#                     pago = 0.0 
 
-        print (f"El impuesto es: {pago} Euros")
-        break
+#             print (f"El impuesto es: {pago} Euros")
+#             break
+#         except ValueError:
+#              print ("Error: Entrada no válida. Ingrese un valor númerico\n")             
 
 
 
@@ -288,6 +297,7 @@ while True:
 
 # Output
 # Año bisiesto
+
 # Entrada de muestra:
 
 # 2015
@@ -295,3 +305,24 @@ while True:
 
 # Output
 # Año comun
+
+# while True:
+#     anyo = input("Introduce el año para verificar si es Bisiesto: ")
+#     anyos = anyo.isdigit()
+
+#     while (anyos == True):
+#         anyos = False
+#         anyo = int(anyo)
+
+#         if (anyo < 1582 or anyo < 0):
+#             print ("Año no pertenece al calendario Gregoriano (1582 en adelante)")
+#         else:
+#             if ((anyo % 4) != 0):
+#                 print (f"Año {anyo} No Bisiesto")
+#             elif ((anyo % 100) != 0):
+#                 print (f"Año {anyo} Bisiesto")
+#             elif ((anyo % 400) != 0):
+#                 print (f"Año {anyo} No Bisiesto")
+#             else:
+#                 print (f"Año {anyo} Bisiesto")         
+#     break
