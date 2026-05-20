@@ -306,23 +306,47 @@
 # Output
 # Año comun
 
-while True:
-    anyo = input("Introduce el año para verificar si es Bisiesto: ")
-    anyos = anyo.isdigit()
+# while True:
+#     anyo = input("Introduce el año para verificar si es Bisiesto: ")
+#     anyos = anyo.isdigit()
 
-    while (anyos == True):
-        anyos = False
-        anyo = int(anyo)
+#     while (anyos == True):
+#         anyos = False
+#         anyo = int(anyo)
 
-        if (anyo < 1582 or anyo < 0):
-            print ("\033[31mAño no pertenece al calendario Gregoriano (1582 en adelante)")
-        else:
-            if ((anyo % 4) != 0):
-                print (f"Año {anyo} \033[33mNo Bisiesto")
-            elif ((anyo % 100) != 0):
-                print (f"Año {anyo} \033[31mBisiesto")
-            elif ((anyo % 400) != 0):
-                print (f"Año {anyo} \033[33mNo Bisiesto")
-            else:
-                print (f"Año {anyo} \033[31mBisiesto")
-    break
+#         if (anyo < 1582 or anyo < 0):
+#             print ("\033[31mAño no pertenece al calendario Gregoriano (1582 en adelante)")
+#         else:
+#             if ((anyo % 4) != 0):
+#                 print (f"Año {anyo} \033[33mNo Bisiesto")
+#             elif ((anyo % 100) != 0):
+#                 print (f"Año {anyo} \033[31mBisiesto")
+#             elif ((anyo % 400) != 0):
+#                 print (f"Año {anyo} \033[33mNo Bisiesto")
+#             else:
+#                 print (f"Año {anyo} \033[31mBisiesto")
+#     break
+
+# while True:
+#     anyo = input("Introduce el año para verificar si es Bisiesto: ")
+    
+#     if anyo.isdigit():
+
+#         anyo = int(anyo)
+
+#         if (anyo < 1582 or anyo < 0):
+#             print ("\033[31mAño no pertenece al calendario Gregoriano (1582 en adelante). Inténtalo de nuevo")
+#         else:
+#             if ((anyo % 4) != 0):
+#                 print (f"Año {anyo} \033[33mNo Bisiesto")
+#             elif ((anyo % 100) != 0):
+#                 print (f"Año {anyo} \033[31mBisiesto")
+#             elif ((anyo % 400) != 0):
+#                 print (f"Año {anyo} \033[33mNo Bisiesto")
+#             else:
+#                 print (f"Año {anyo} \033[31mBisiesto")
+
+#         break
+
+#     else:
+#         print("El valor", anyo, "no es un valor numérico. Inténtalo de nuevo")
