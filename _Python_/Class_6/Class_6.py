@@ -16,8 +16,6 @@
 #     print(letra)
 
 
-import random
-
 # numero_secreto = random.randint(1,10)
 # intento = 0
 
