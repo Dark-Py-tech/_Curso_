@@ -39,7 +39,7 @@ while True:
 
     intento += 1
 
-    if (numero == numero_secreto):
+    if numero == numero_secreto:
         print ("¡Bien hecho, muggle! Eres libre ahora.\n")
         break
     else:
