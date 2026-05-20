@@ -310,6 +310,7 @@
 #     anyo = input("Introduce el año para verificar si es Bisiesto: ")
 #     anyos = anyo.isdigit()
 
+<<<<<<< HEAD
 #     while (anyos == True):
 #         anyos = False
 #         anyo = int(anyo)
@@ -350,3 +351,21 @@
 
 #     else:
 #         print("El valor", anyo, "no es un valor numérico. Inténtalo de nuevo")
+=======
+    while anyos:
+        anyos = False
+        anyo = int(anyo)
+
+        if anyo < 1582 or anyo < 0:
+            print ("\033[31mAño no pertenece al calendario Gregoriano (1582 en adelante)")
+        else:
+            if (anyo % 4) != 0:
+                print (f"Año {anyo} \033[33mNo Bisiesto")
+            elif (anyo % 100) != 0:
+                print (f"Año {anyo} \033[31mBisiesto")
+            elif (anyo % 400) != 0:
+                print (f"Año {anyo} \033[33mNo Bisiesto")
+            else:
+                print (f"Año {anyo} \033[31mBisiesto")
+    break
+>>>>>>> 051d107b2babd64179cdfc54a76874b657b93ada
