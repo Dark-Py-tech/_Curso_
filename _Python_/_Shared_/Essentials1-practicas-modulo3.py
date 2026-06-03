@@ -433,7 +433,7 @@
 #     elif año % 100 == 0 and año % 400 != 0: # divisible entre 4 y 10 y no entre 400
 #         print("Año común")
 #     elif año % 100 == 0 and año % 400 == 0: # divisible entre 4, 100 y 400
-#         print("Año bisiesto")
+#         print("Año ")
 
 # # # ejemplo calculando el resto sin comparar el resultado
 # # # para Python cualquier valor numérico distinto de 0 se considera True!!!!!
